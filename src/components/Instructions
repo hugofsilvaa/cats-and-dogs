@@ -1,0 +1,9 @@
+create Dropdown component that will have a select with the options: All, Cats or Dogs
+on App.js , create a state userSelection: 'All'  as initial value.
+pass handleAnimalSelection() method down to Dropdown.js
+handleAnimalSelection() will save on App state userSelection the value that the user clicked on Dropdown
+on App create a method animalArray() that will return the whole array animals if the value from the state userSelection is all, will return only the cats or only dogs depending on what the userSelection value.
+pass the result of animalArray() as props to AnimalsList and render one AnimalCard to each element we have on the array we are receiving as props.
+on AnimalCard, create a isFavorite: false initial state.
+create a method handleFavorite() that will change the state of isFavorite from true to false, and vice-versa.
+if isFavorite: true render on the screen: :heart: otherwise render ♡
